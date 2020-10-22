@@ -11,13 +11,19 @@ func targets() -> [Target] {
     targets += Target.makeAppTargets(
         name: "App",
         displayName: "Movie",
-        dependencies: ["Networking"]
+        dependencies: ["Networking", "MovieSearch"]
     )
 
     targets += Target.makeFrameworkTargets(
         name: "Networking",
         targets: Set([.framework])
     )
+    
+    targets += Target.makeFrameworkTargets(
+        name: "MovieSearch",
+        targets: Set([.framework])
+    )
+
 
     return targets
 }

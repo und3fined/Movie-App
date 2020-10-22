@@ -8,7 +8,12 @@ all: clean
 
 dev: tuist/generate tuist/open initial_file_header ## Start code
 
+sync: removeXcodeFiles tuist/generate ## Sync xcode file
+
 open: tuist/open ## Open project
+
+removeXcodeFiles: 
+	@rm -rf *.xc*
 
 clean: ## Clean cache
 	@echo "Start clean project"
