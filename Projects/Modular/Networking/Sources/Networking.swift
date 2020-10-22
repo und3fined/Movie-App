@@ -8,7 +8,7 @@
 
 import Foundation
 
-public final class M1 {
+public final class Networking {
     public static func hello() {
         print("Hello, from your M1 framework")
     }

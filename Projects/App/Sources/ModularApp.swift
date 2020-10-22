@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import M1
+import Networking
 
 @main
 struct ModularApp: App {
@@ -17,7 +17,7 @@ struct ModularApp: App {
             ContentView()
         }.onChange(of: scenePhase) { phase in
             print("scenePhase change \(phase)")
-            M1.hello()
+            Networking.hello()
         }
     }
 }
