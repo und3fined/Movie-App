@@ -9,7 +9,7 @@ let configurations: [CustomConfiguration] = [
 func targets() -> [Target] {
     var targets: [Target] = []
     targets += Target.makeAppTargets(
-        name: "Movie",
+        name: "App",
         displayName: "Movie",
         dependencies: ["Networking"]
     )
